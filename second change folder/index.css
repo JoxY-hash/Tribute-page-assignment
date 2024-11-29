@@ -5,12 +5,14 @@
     box-sizing: border-box;
 }
 header{font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 10px;
     justify-content: flex-end;
+
 }
- p{font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+ nav{font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
     
+    font-weight: 900;
 
 }
 
@@ -20,37 +22,56 @@ body {
     color: #333;
     background-color: #f8f8f8;
     padding: 20px;
+    width: 50%;
 }
 
 /* Container styling */
 div {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    
 }
 
 h1 {
-    font-size: 1.8rem;
-    color: #444;
-    margin: 10px 0;
+    font-size:20px;
+    color:black;
+    font-family:  karma;
+    margin: 10px;
+    font-weight: 300;
+    justify-content: center;
 }
 
 h2, h3 {
-    color: #555;
+    color: black;
+    font-family: karma;
+    line-height: 36px;
+    margin: 10px 0px;
+    text-align: center;
 }
 
 p {
-    font-size: 1rem;
-    margin: 10px 0 20px;
+    font-size: 15px ;
+    margin: 15px 0px;
+    padding: 10px;
+    width: 50%;
+    font-family: karma;
+    color: black;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 22.5px;
 }
 
 /* Image Styling */
 img {
-    width: 100%;
+    width:100%;
     max-width: 500px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px;
-    border-radius: 8px;
+    display: inline;
+    line-height: 22.5px;
+    border-radius: 0px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 /* Section Styling */
@@ -67,42 +88,48 @@ section#About\ Me,\ The\ Food\ Man {
 }
 
 .tags {
-    display: flex;
+    
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
 }
 
 .tags span {
-    background: #007BFF;
+    background:none;
     color: #fff;
     padding: 5px 10px;
     border-radius: 15px;
     font-size: 0.9rem;
-    cursor: pointer;
+    
 }
 
-.tags span:hover {
+.tags span {
     background: #0056b3;
+    box-sizing: 10px;
 }
 
 /* Footer Styling */
 footer {
-    text-align: center;
+    text-align:end;
     padding: 20px;
-    background: #222;
+    background:white;
     color: #fff;
-    border-radius: 8px;
+    border-radius:0px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 footer img {
     max-width: 300px;
-    margin: 10px auto;
+    margin: 0px auto;
+    width: 10%;
+    align-items: flex-start;
+
+
 }
 
 footer p {
-    margin: 10px 0;
+    margin: 0px 0;
+justify-content: end;
 }
 
 footer section {
@@ -115,14 +142,14 @@ footer section {
     display: inline-block;
     padding: 8px 12px;
     margin: 5px;
-    background: #007BFF;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
+    background: #000000;
+    color:#333;
+
+
 }
 
-.pagnition div:hover {
-    background: #0056b3;
+.pagnition div {
+    background:white;
 }
 
 /* Responsive Design */
@@ -141,5 +168,7 @@ footer section {
 
     .tags span {
         font-size: 0.8rem;
+        border: 20px;
+
     }
 }
